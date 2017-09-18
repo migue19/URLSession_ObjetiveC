@@ -92,13 +92,25 @@
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     
     [request setHTTPMethod:@"POST"];
-    NSDictionary *mapData = [[NSDictionary alloc] initWithObjectsAndKeys: @"user", @"17f2eed7d0994382d471aeb442682e59",
-                             @"password", @"0192023a7bbd73250516f069df18b500",
-                             @"versionTerminosCondiciones", @"v1.0",
-                             @"versionAvisoPrivacidad", @"v1.0",nil];
     
+    
+    //@{@"user":@"17f2eed7d0994382d471aeb442682e59",@"key2": @"Tutorials"};
+    NSDictionary *mapData = @{@"user":@"17f2eed7d0994382d471aeb442682e59",
+                              @"password": @"0192023a7bbd73250516f069df18b500",
+                              @"versionTerminosCondiciones": @"v1.0",
+                              @"versionAvisoPrivacidad":@"v1.0"};
+ 
     NSData *postData = [NSJSONSerialization dataWithJSONObject:mapData options:0 error:&error];
+    
     [request setHTTPBody:postData];
+    
+    
+    NSString *body = [[NSString alloc] initWithData:[request HTTPBody] encoding: NSUTF8StringEncoding];
+    
+    //NSLog(@"%@",[request HTTPBody]);
+    
+    NSLog(@"El body es: %@",body);
+    
     
     
     NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
