@@ -81,7 +81,6 @@
 
 -(void)serviceRESTPOST{
     NSError *error;
-    
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
     NSURL *url = [NSURL URLWithString:@"http://54.86.42.99:4000/login"];
