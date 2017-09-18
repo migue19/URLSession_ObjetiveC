@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserResponse.h"
+
+
 
 @interface ViewController : UIViewController<NSURLSessionDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *txtCaja;
+@property (weak, nonatomic) IBOutlet UITextField *userTxt;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTxt;
+
 
 - (IBAction)enviarAction:(id)sender;
 //- (void)serviceREST: (int) a secondNumber: (int) b;

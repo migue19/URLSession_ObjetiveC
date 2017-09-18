@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49CA2ED41F706A780065DDA5 /* RestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA2ED31F706A780065DDA5 /* RestService.m */; };
+		49CA2ED71F7076970065DDA5 /* UserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA2ED61F7076970065DDA5 /* UserResponse.m */; };
+		49CA2EDF1F7087150065DDA5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA2EDE1F7087150065DDA5 /* Utils.m */; };
 		F289D72D1F5F012B0006D990 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F289D72C1F5F012B0006D990 /* AppDelegate.m */; };
 		F289D7301F5F012B0006D990 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F289D72F1F5F012B0006D990 /* ViewController.m */; };
 		F289D7331F5F012B0006D990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F289D7311F5F012B0006D990 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49CA2ED21F706A780065DDA5 /* RestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestService.h; sourceTree = "<group>"; };
+		49CA2ED31F706A780065DDA5 /* RestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestService.m; sourceTree = "<group>"; };
+		49CA2ED51F7076970065DDA5 /* UserResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserResponse.h; sourceTree = "<group>"; };
+		49CA2ED61F7076970065DDA5 /* UserResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserResponse.m; sourceTree = "<group>"; };
+		49CA2EDD1F7087150065DDA5 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		49CA2EDE1F7087150065DDA5 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		F289D7281F5F012B0006D990 /* URLSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F289D72B1F5F012B0006D990 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F289D72C1F5F012B0006D990 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +71,12 @@
 				F289D72C1F5F012B0006D990 /* AppDelegate.m */,
 				F289D72E1F5F012B0006D990 /* ViewController.h */,
 				F289D72F1F5F012B0006D990 /* ViewController.m */,
+				49CA2ED21F706A780065DDA5 /* RestService.h */,
+				49CA2ED31F706A780065DDA5 /* RestService.m */,
+				49CA2EDD1F7087150065DDA5 /* Utils.h */,
+				49CA2EDE1F7087150065DDA5 /* Utils.m */,
+				49CA2ED51F7076970065DDA5 /* UserResponse.h */,
+				49CA2ED61F7076970065DDA5 /* UserResponse.m */,
 				F289D7311F5F012B0006D990 /* Main.storyboard */,
 				F289D7341F5F012B0006D990 /* Assets.xcassets */,
 				F289D7361F5F012B0006D990 /* LaunchScreen.storyboard */,
@@ -142,9 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CA2ED71F7076970065DDA5 /* UserResponse.m in Sources */,
 				F289D7301F5F012B0006D990 /* ViewController.m in Sources */,
 				F289D73B1F5F012B0006D990 /* main.m in Sources */,
+				49CA2EDF1F7087150065DDA5 /* Utils.m in Sources */,
 				F289D72D1F5F012B0006D990 /* AppDelegate.m in Sources */,
+				49CA2ED41F706A780065DDA5 /* RestService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
